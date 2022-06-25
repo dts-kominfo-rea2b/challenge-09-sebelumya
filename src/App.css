@@ -1,4 +1,58 @@
+@keyframes color {
+  0% {
+    background: #33cccc;
+  }
+  20% {
+    background: #33cc36;
+  }
+  40% {
+    background: #b8cc33;
+  }
+  60% {
+    background: #fcca00;
+  }
+  80% {
+    background: #33cc36;
+  }
+  100% {
+    background: #33cccc;
+  }
+}
 .App {
   text-align: center;
+  max-width: 1100px;
+  margin-inline: auto;
+  text-decoration: none;
+}
+body {
+  background: #33cccc; /* Fallback */
+  animation: color 9s infinite linear;
+}
+.contact {
+  display: flexbox;
+  flex-direction: row;
+  margin: 200px;
+  margin-top: 10px;
+  border-radius: 25px;
+}
+.person {
   display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  background: #33cccc; /* Fallback */
+  animation: color 5s infinite linear;
+}
+
+.avatar {
+  height: 80px;
+  margin: 10% 5% 10% 10%;
+  border-radius: 50%;
+}
+.profile {
+  text-align: center;
+  font-size: small;
+  margin: auto;
 }
